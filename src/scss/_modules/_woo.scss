@@ -1,0 +1,7 @@
+.ya-woo-page {
+  position: relative;
+  padding: 150px 0 50px;
+  @include min550 {
+    padding: 175px 0 50px;
+  }
+}

@@ -1,0 +1,31 @@
+.ya-contact {
+  position: relative;
+  text-align: center;
+  padding: 150px 0 50px;
+  @include min550 {
+    padding: 175px 0 50px;
+  }
+  &__head {
+    margin-bottom: 50px;
+  }
+  &__head-row {
+    h5 {
+      font-size: 2rem;
+    }
+    a {
+      display: inline-block;
+      transition: all 0.3s ease-in-out;
+    }
+    a:hover {
+      color: $blue;
+    }
+    &:not(:last-of-type) {
+      margin-bottom: 15px;
+    }
+  }
+  &__form {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+  }
+}

@@ -1,0 +1,64 @@
+// Fonts
+$roboto: "Roboto", sans-serif;
+$gill: "Gill Sans Nova Book", sans-serif;
+
+// Colors
+$black: #333333;
+$grey: #f0f0f0;
+$dark: #282828;
+$blue: #679ac9;
+
+//transition
+$transition: all 420ms cubic-bezier(0.165, 0.84, 0.44, 1);
+$transition2: all 1s cubic-bezier(0.23, 1, 0.32, 1);
+
+/**
+ * WooCommerce CSS Variables
+ */
+
+$woocommerce: #e2802b !default;
+$green: #7ad03a !default;
+$red: #a00 !default;
+$orange: #e2802b !default;
+$blue: #2ea2cc !default;
+
+$primary: #000 !default; // Primary color for buttons (alt)
+$primarytext: desaturate(
+  lighten($primary, 50%),
+  18%
+) !default; // Text on primary color bg
+
+$secondary: #679ac9 !default; // Secondary buttons
+$secondarytext: desaturate(
+  darken($secondary, 60%),
+  21%
+) !default; // Text on secondary color bg
+
+$highlight: adjust-hue(
+  $primary,
+  150deg
+) !default; // Prices, In stock labels, sales flash
+$highlightext: desaturate(
+  lighten($highlight, 50%),
+  18%
+) !default; // Text on highlight color bg
+
+$contentbg: #fff !default; // Content BG - Tabs (active state)
+$subtext: #767676 !default; // small, breadcrumbs etc
+
+// export vars as CSS vars
+:root {
+  --woocommerce: #{$woocommerce};
+  --wc-green: #{$green};
+  --wc-red: #{$red};
+  --wc-orange: #{$orange};
+  --wc-blue: #{$blue};
+  --wc-primary: #{$primary};
+  --wc-primary-text: #{$primarytext};
+  --wc-secondary: #{$secondary};
+  --wc-secondary-text: #{$secondarytext};
+  --wc-highlight: #{$highlight};
+  --wc-highligh-text: #{$highlightext};
+  --wc-content-bg: #{$contentbg};
+  --wc-subtext: #{$subtext};
+}

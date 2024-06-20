@@ -1,0 +1,43 @@
+.ya-page-gen,
+.empty404 {
+  padding: 150px 0 50px;
+  @include min550 {
+    padding: 175px 0 50px;
+  }
+}
+
+.ya-content {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 5px;
+  }
+  h1 {
+    font-size: 3.8rem;
+  }
+  p {
+    margin-bottom: 25px;
+  }
+  a {
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: $blue;
+    }
+  }
+  ul,
+  ol {
+    list-style-position: inside;
+  }
+}
+
+.empty404 {
+  text-align: center;
+  p {
+    margin: 25px 0 35px;
+  }
+}

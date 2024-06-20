@@ -1,0 +1,97 @@
+.hero-home {
+  position: relative;
+  margin-top: 113px;
+  @include min992 {
+    margin-top: 121px;
+  }
+  .swiper-slide {
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 39%;
+    }
+  }
+}
+
+.ya-title {
+  width: 100%;
+  max-width: 992px;
+  margin: 50px auto 0;
+  text-align: center;
+  h2 {
+    margin-bottom: 15px;
+  }
+}
+
+.ya-about-home {
+  position: relative;
+  padding: 50px 0;
+  &__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    @include min992 {
+      flex-direction: row;
+    }
+  }
+  &__img,
+  &__info {
+    width: 100%;
+    @include min992 {
+      width: 50%;
+    }
+  }
+  &__img {
+    position: relative;
+    &::before {
+      content: "";
+      display: block;
+      padding-top: 75%;
+    }
+  }
+  &__info {
+    p {
+      margin-bottom: 25px;
+    }
+  }
+}
+
+.ya-last {
+  position: relative;
+  padding-bottom: 50px;
+  ul.products {
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(min(250px, 100%), 1fr)
+    );
+  }
+}
+
+.ya-cat-cards {
+  position: relative;
+  padding-bottom: 50px;
+  &__content {
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(min(250px, 100%), 1fr)
+    );
+    gap: 50px;
+    place-items: center;
+  }
+  &__card {
+    display: block;
+    font-family: $gill;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      color: $blue;
+    }
+  }
+}

@@ -2237,6 +2237,10 @@ div.wpcf7-validation-errors {
 .ya-content a:hover {
   color: #679ac9;
 }
+.ya-content ul,
+.ya-content ol {
+  list-style-position: inside;
+}
 
 .empty404 {
   text-align: center;
@@ -2763,6 +2767,8 @@ p.demo_store a,
   margin-bottom: 1em;
   border: 0;
   width: 100%;
+  border-collapse: separate;
+  border-spacing: 0 15px;
 }
 .woocommerce div.product form.cart .variations td,
 .woocommerce div.product form.cart .variations th {
